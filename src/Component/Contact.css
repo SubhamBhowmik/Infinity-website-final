@@ -1,0 +1,10 @@
+.wrap-input{
+    border: none!important;
+}
+.wrap-contact{
+    width: 900px;
+    border: none;
+}
+input.input{
+    margin-bottom: 20px!important;
+}

@@ -1,0 +1,9 @@
+.wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.listing-hero{
+    background-color: #0dcaf03d!important;
+}
