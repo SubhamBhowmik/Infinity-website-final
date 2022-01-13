@@ -26,12 +26,14 @@ const AboutUs = () => {
             </div>
          
             <div class="col-lg-6">
+            <div className='middletext'>
             <Fade right>
               <p class="h6 mb-1 text-uppercase text-primary mb-3">Infinity Foundation</p>
               <h2 class="mb-4">"Your limits are waiting for you to reach beyond infinity". </h2>
               <p class="text-body">We believe that knowledge has no boundaries. We train students and professionals to challenge
                 their limits and develop skills that set them apart.</p>
                 </Fade>
+            </div>
             </div>
             
           </div>
@@ -127,7 +129,7 @@ const AboutUs = () => {
             <div class="right-text">
             <Fade right>
               <p class="h6 text-uppercase text-primary">Internship Opportunities</p>
-              <h3>We Provide market specialised internshiops to students and professionals</h3>
+              <h3>We Provide market specialised internships to students and professionals</h3>
               <p class="text-muted">All of our courses are specially curated to deliver you with the best and most relevant skills for the job market.
                 Our expert teachers ensure that every topic is taught to you with precision and care.</p>
                 </Fade>
