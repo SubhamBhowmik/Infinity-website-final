@@ -20,7 +20,7 @@ const [state, setstate] = useState(false)
                     <h3>"Your limits are waiting for you to reach beyond infinity"</h3>
                     <Typed
                         className='typed-text display-3 text-white'
-                        strings={['Web Development', 'Android Development', 'DATA SCIENCE', 'BUSINESS ANALYTICS', 'HUMAN RESOURCE']}
+                        strings={[ 'COURSES', 'TRAININGS', 'INTERNSHIPS']}
                         typeSpeed={40}
                         backSpeed={60}
                         loop
@@ -32,7 +32,7 @@ const [state, setstate] = useState(false)
                     
                 </div>
                 </div>
-
+            
             </div>
         </>
     )

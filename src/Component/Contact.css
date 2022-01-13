@@ -24,6 +24,7 @@ input.input{
     padding: 15px;
     position: relative;
     background-color: transparent;
+    
   }
   
   .wrap-contact {
@@ -31,6 +32,7 @@ input.input{
     background: transparent;
     border: 1px solid #b3b3b3;
     padding: 40px 0px 20px 0px;
+    border-color: transparent;
   }
   
   .wrap-contact-image {
