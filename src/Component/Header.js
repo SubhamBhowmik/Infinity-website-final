@@ -11,16 +11,16 @@ const [state, setstate] = useState(false)
   }
     return (
         <>
-           
+           <div>
             <div className="header-wraper">
-            <ParticlesBackground/>
+            <ParticlesBackground />
                 <div className="main-info d-flex flex-column ">
                     <Fade bottom duration={2000}><p className='display-5'> INFINITY FOUNDATION</p></Fade>
 
                     <h3>"Your limits are waiting for you to reach beyond infinity"</h3>
                     <Typed
                         className='typed-text display-3 text-white'
-                        strings={['Web Development', 'Android Development', 'DATA SCIENCE', 'BUSINESS ANALYTICS', 'HUMAN RESOURCE']}
+                        strings={[ 'COURSES', 'TRAININGS', 'INTERNSHIPS']}
                         typeSpeed={40}
                         backSpeed={60}
                         loop
@@ -31,8 +31,8 @@ const [state, setstate] = useState(false)
                     </button>
                     
                 </div>
-                
-
+                </div>
+            
             </div>
         </>
     )
