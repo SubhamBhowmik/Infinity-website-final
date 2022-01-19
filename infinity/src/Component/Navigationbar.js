@@ -41,7 +41,7 @@ function Navbar() {
                 Home
               </Link>
             </li>
-            <li className='nav-item'>
+            <li className='nav-item '>
               <Link
                 to='/About'
                 className='nav-links'
@@ -68,7 +68,24 @@ function Navbar() {
                 Infinity talent Forum
               </Link>
             </li>
-           
+            <li className='nav-item'>
+              <Link
+                to='/DonateUs'
+                className='nav-links'
+                onClick={closemenu}
+              >
+                Donate Us
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link
+                to='/Blogs'
+                className='nav-links'
+                onClick={closemenu}
+              >
+                Blogs
+              </Link>
+            </li>
        
           </ul>
        

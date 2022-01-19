@@ -6,7 +6,8 @@ import Home from './Component/Home'
 import Contact from './Component/Contact';
 import Navigationbar from './Component/Navigationbar'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Footer from './Component/Footer';
+import DonateUs from './Component/DonateUs';
+import Blogs from './Component/Blogs';
 const App = () => {
   return (
     <>
@@ -18,7 +19,8 @@ const App = () => {
           <Route path='/About' component={AboutUs} />
           <Route path='/TalentForum' component={TalentForum} />
           <Route path='/contact' component={Contact} />
-         
+          <Route path='/DonateUs' exact component={DonateUs} />
+          <Route path='/Blogs' exact component={Blogs} />
         </Switch>
       </Router>
     </>
