@@ -18,7 +18,7 @@ const AboutUs = () => {
       <Fade down>
       <img className='image-header' src='./assets/img/banner-1.png' />
       <div className='but-con'>
-      <Button variant="outline-dark" className='but-contact'>Contact Us</Button>
+      <Button variant="outline-dark" className='but-contact' href="/Contact">Contact Us</Button>
       </div>
       </Fade>
 
