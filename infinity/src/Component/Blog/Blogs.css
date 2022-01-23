@@ -1,0 +1,147 @@
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, rgb(51, 204, 171) 50%, #09f 50%);
+  bottom:0;
+  left:0;
+  opacity:.5;
+  position:absolute;
+  right:0;
+  top:0;
+  z-index:-1;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.blog-header{
+    top:0%;
+    position: relative;
+    min-height:500px;
+    width: 100%;
+
+}
+
+.bloghead {
+	color:#00aeff;
+	font: normal 40px/270px "Gill Sans", "Gill Sans MT", "Century Gothic";
+	text-align:center;
+	padding-left:6px;
+	letter-spacing:6px;
+	text-shadow:
+	0 0 10px #30beff,
+	0 0 50px #75d3ff,
+	0 0 90px #b4e7ff
+	;
+	-webkit-font-smoothing:antialiased;
+}
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:30%;
+  padding:10vmin;
+  position:absolute;
+  text-align:center;
+  top:60px;
+}
+
+.categories{
+
+  margin-top:20px ;
+  margin-bottom:20px ;
+  width:100%;
+  height :500px;
+}
+
+.blue{
+  background: linear-gradient(to left,rgb(0, 132, 255),rgb(135, 241, 255));
+}
+
+.mid{
+  background: linear-gradient(to right,rgb(0, 255, 242),rgb(171, 255, 216));
+}
+
+.green{
+  background: linear-gradient(to left,rgb(0, 255, 128),rgb(194, 255, 159));
+}
+
+.cat-right {
+  padding:50px;
+  margin-left:40%;
+}
+
+.cat-left {
+  padding:50px;
+  margin-right:40%;
+}
+
+h1 {
+  font-family:monospace;
+}
+
+
+.blogtitle{
+  font-size: 40px;
+}
+
+.blogtitle:hover{
+  text-decoration: underline;
+}
+
+.card:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.26), 0 6px 20px 0 rgba(0, 0, 0, 0.397);
+}
+
+.blogimage{
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.blogimage:hover{
+  opacity: 0.5;
+}
+
+.blogauthor{
+  color: #09f;
+  text-align: right;
+  margin-top: 20px;
+}
+
+.blogcontent{
+  color:rgb(41, 41, 41);
+  overflow-wrap: break-word;
+  text-align: justify;
+}
+
+.highlight {
+  background: #f7f39e;
+  border-radius: 0.5vw;
+  padding: 0 3px 3px;
+  margin-bottom: 0.25vw;
+  display: inline-block;
+}
+
+div.scroll {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
