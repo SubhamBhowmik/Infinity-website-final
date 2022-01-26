@@ -17,7 +17,7 @@ const Blogs = () => {
     <div class="bg bg2"></div>
     <div class="bg bg3"></div>
     <div class="content">
-    <h2>Infinity Foundation: </h2>
+    <h2>Infinity Foundation</h2>
     <h1>KNOWLEDGE HUB</h1>
     <h5>One Platform for all your doubts.</h5><br/>
     <Form className="d-flex">
