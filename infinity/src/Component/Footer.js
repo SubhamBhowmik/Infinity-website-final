@@ -12,6 +12,7 @@ const Footer = () => {
               <h6>About</h6>
               <p class="text-justify">Infinity Foundation is a non-profit organisation that aims to promote quality education for all.
               </p>
+              <p>Infinity Foundation is register under Act No. 21 of 1860 in Pune Charity Commissioner office. Reg. No. MH/994/2021/Pune.</p>
             </div>
   
             <div class=" col-xs-6 col-md-3 d-flex flex-column bd-highlight mb-3">

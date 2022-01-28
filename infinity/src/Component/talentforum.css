@@ -8,6 +8,18 @@
     background-color: #0dcaf03d!important;
 }
 
+.pros-image{
+    width:50%;
+    height:auto;
+    padding:20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .pros-image {
+    width:80%;
+    height:auto;
+  }
+}
 
 /*------------------------------------------------*/
 .container-contact {

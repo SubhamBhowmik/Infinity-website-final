@@ -15,13 +15,16 @@ const Contact = () => {
 
   <div class="listing-hero">
     <div class="hero-heading">
-        
+    <div class="middletext">  
     <Fade bottom>
-              <h1 className="responsive-headline">Contact Us</h1>
+            
+            <h1 className="responsive-headline">Contact Us</h1><br /> 
             </Fade>
             <Fade bottom duration={1200}>
-              <h3>Got any Questions? Feel free to ask or visit our About-Us page </h3>
-            </Fade>      
+              <h5>Got any Questions? 
+              Feel free to ask through the Contact-Us Form or Chat with us directly through Whatsapp.</h5> 
+            </Fade> 
+      </div>
       </div>
   </div>
 
