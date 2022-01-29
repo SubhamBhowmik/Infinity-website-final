@@ -15,7 +15,7 @@ const AboutUs = () => {
   return (
     <>
       <div>
-      <Fade down>
+      <Fade left>
       <img className='image-header' src='./assets/img/banner-1.png' />
       <div className='but-con'>
       <Button variant="outline-dark" className='but-contact' href="/Contact">Contact Us</Button>

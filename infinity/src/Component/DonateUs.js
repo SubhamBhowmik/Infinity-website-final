@@ -10,6 +10,15 @@ const DonateUs = () => {
         }, [])
   return (
     <>
+    <div class="container py-5">
+        <div class='middletext'>
+        <Fade right>
+        <h2 class="mb-4">We work to make quality education accessible to all.</h2>
+        <h4 class="h6 mb-1 text-uppercase text-primary">Donate to support our cause.</h4>
+        </Fade>
+        </div>
+      </div>
+      
      <div className="main">
        <div className="container-">
            <div className="main-card">

@@ -27,7 +27,7 @@ const App = () => {
         </Switch>
       </Router>
 
-      <FloatingWhatsApp phoneNumber={"1234567890"} accountName={"Infinity Foundation"} />
+      <FloatingWhatsApp phoneNumber={"+917620472017"} accountName={"Infinity Foundation"} avatar={"./assets/img/favicon.jpg"}/>
     </>
   )
 }
