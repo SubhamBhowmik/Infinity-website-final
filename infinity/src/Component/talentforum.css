@@ -73,7 +73,23 @@
     color: green;
     border-radius: 3px;
   }
+
+  .form-head{
+    color: #fff;
+    font-weight: 800;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 3px 3px 0px #000000;
+  }
+
   
+  .form-section{
+    padding-top:60px;
+    padding-bottom:60px;
+    margin: 10%;
+    background:linear-gradient(45deg, #c846fc, #6ccaf5);
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+  }
   
   /*------------------------------------------------------------------
   [ Input ]*/
@@ -226,6 +242,9 @@
     position: relative;
   }
   
+  .btn{
+    margin:10px;
+  }
   /*==================================================================
   [ Info Grid]*/
   
