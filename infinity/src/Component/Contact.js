@@ -26,9 +26,14 @@ const Contact = () => {
   }
 
   const submitform = () => {
-    alert("Thank you for showing interest in Infinity Foundation. We will get back to you shortly.");
-   setContactdata({});
-   settoggle(true);
+    if(contactdata){
+      alert("Thank you for showing interest in Infinity Foundation. We will get back to you shortly.");
+      setContactdata({});
+      settoggle(true);
+    }else{
+      alert("Please Fill the form ")
+    }
+    
   }
   if(toggle){
     return <Redirect to="/About"/>
@@ -57,7 +62,7 @@ const Contact = () => {
         <div class="container-contact">
           <div class="wrap-contact">
 
-            <form id="myForm" name="contact" class="contact-form validate-form" method="post" action="contact-form-handler.php">
+            <form id="myForm" name="contact" class="contact-form validate-form" method="post" action="contact-form-handler.php" onSubmit={submitform}>
             
               <Fade left>
                 <div class="wrap-input validate-input" data-validate="Please enter your name">
@@ -89,7 +94,7 @@ const Contact = () => {
 
 
               <div class="container-contact-form-btn">
-                <button  type="submit" class="btn btn-info" onClick={submitform}>
+                <button  type="submit" class="btn btn-info" >
                   <Fade left>Send</Fade>
                 </button>
               </div>

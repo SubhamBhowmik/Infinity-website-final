@@ -10,7 +10,6 @@ const Forum = () => {
          contactNo: "",
          email: "",
          adharcard: "",
-         gender: "",
          address: "",
          father: "",
          fatherContact: "",
@@ -41,11 +40,17 @@ const Forum = () => {
     console.log(studentdata);
     e.preventDefault()
   }
-
+   console.log(studentdata);
   const submitform = () => {
-    alert("Thank you for registering to Infinity Talent Forum. Your information has been recorded successfully. We will get back to you shortly.");
-   setStudentdata({});
-   settoggle(true);
+
+    if(studentdata){
+        alert("Thank you for registering to Infinity Talent Forum. Your information has been recorded successfully. We will get back to you shortly.");
+        setStudentdata({});
+        settoggle(true);
+    }else{
+        alert("Please Fill the Form correctly")
+    }
+   
   }
   if(toggle){
     return <Redirect to="/About"/>
@@ -88,7 +93,7 @@ const Forum = () => {
 
             <div class="container-contact">
                 <div class="wrap-contact">
-                    <form name="contact" class="contact-form validate-form" method="post" action="contact-form-handler.php">
+                    <form name="contact" class="contact-form validate-form" method="post" action="contact-form-handler.php" onSubmit={submitform}>
                     
                     <Fade left>
                     <div class='middletext'>
@@ -140,8 +145,8 @@ const Forum = () => {
                                 <label class="form-check-label" for="female">&nbsp;Other</label>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <input class="form-check-input" type="radio" name="Gender" id="female" 
-                                value={studentdata.gender='Not Mentioned'} onChange={handleinputs}/>
-                                <label class="form-check-label" for="female">&nbsp;Do not want to mention</label>
+                                value={studentdata.gender='others'} onChange={handleinputs}/>
+                                <label class="form-check-label" for="others">&nbsp;Do not want to mention</label>
                             </div>
 
                         </Fade>
@@ -208,14 +213,14 @@ const Forum = () => {
 
                         <Fade left>
                             <div class="wrap-input validate-input" data-validate="Please enter your Mother's Occupation">
-                                <input class="input" type="text" required="true" name="mothrtOccupation"
+                                <input class="input" type="text" required="true" name="motherOccupation"
                                 value={studentdata.motherOccupation} onChange={handleinputs} placeholder="Mother's Occupation" />
                             </div>
                         </Fade>
 
                         <Fade left>
                             <div class="wrap-input validate-input" data-validate="Please enter your Mother's Annual Income">
-                                <input class="input" type="text" required="true" name="motherIncome"
+                                <input class="input" type="text"  name="motherIncome"
                                 value={studentdata.motherIncome} onChange={handleinputs} placeholder="Mother's Annual Income" />
                             </div>
                         </Fade>
@@ -324,7 +329,7 @@ const Forum = () => {
                         <br /><br /><br /><h5>
                         <div class="wrap-input validate-input" data-validate="Please enter your school name">
                         <label for="myfile">Select a file:</label>
-                        <input type="file" id="myfile" name="myfile" />
+                        <input type="file" required="true" id="myfile" name="myfile" />
                         </div></h5>
                         </Fade>
 
@@ -335,15 +340,15 @@ const Forum = () => {
                             value={studentdata.tnc="True"} onChange={handleinputs} />
                             <label for="tnc"> I have read and understood the terms and conditions</label><br />
                             </div>
-                            <div class="wrap-input validate-input" data-validate="Please enter your school name">
+                            <div class="wrap-input validate-input" required="true" data-validate="Please enter your school name">
                             <input type="checkbox" id="tnc2" name="tnc2"
-                            value={studentdata.tnc2="True"} onChange={handleinputs} />
+                            value={studentdata.tnc2="True"} required="true" onChange={handleinputs} />
                             <label for="tnc2"> I agree to the terms and conditions</label><br />
                             </div>
                         </Fade>
 
                         <div class="container-contact-form-btn ">
-                            <button type="submit" class="btn btn-info" onClick={submitform}>
+                            <button type="submit" class="btn btn-info" >
                                 <Fade left>Submit</Fade>
                             </button>
                         </div>
